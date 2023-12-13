@@ -1,3 +1,4 @@
+/* Définitions globales et réinitialisations */
 @font-face {
     font-family: logo;
     src: url(fonts/electrical.ttf);
@@ -6,6 +7,8 @@
 body {
     background-color: black;
 }
+
+/* Styles pour l'en-tête */
 header {
     display: flex;
     align-items: center;
@@ -13,6 +16,8 @@ header {
     color: white;
     gap: 600px;
 }
+
+/* Styles principaux */
 main {
     display: flex;
     flex-direction: column;
@@ -20,6 +25,7 @@ main {
     justify-content: center;
 }
 
+/* Styles pour le menu et ses éléments */
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -28,60 +34,60 @@ main {
     justify-content: space-around;
     height: auto;
     width: 400px;
-    padding: 0 50 0 50;
-    background-color:#ccc;
+    padding: 0 50px;
+    background-color: #ccc;
     border-radius: 45px;
 }
+
+/* Styles pour les sliders de réglage */
 .range {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 150px;
     gap: 30px;
-    padding: 5px 12px 5px 12px;
-    overflow-y: auto; /* Activer la barre de défilement verticale si nécessaire */
+    padding: 5px 12px;
+    overflow-y: auto;
 }
+
+.range:hover {
+    background-color: #ddd;
+}
+
+/* Styles pour la modification des dimensions */
 .dim {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
+
 .dim-tools {
     display: flex;
     border-radius: 10px;
 }
 
-/* Style de la poignée de la barre de défilement pour Chrome */
-.range::-webkit-scrollbar-thumb {
-    background-color: #007BFF; /* Couleur de la poignée de la barre de défilement */
-    border-radius: 5px; /* Coins arrondis de la poignée */
+/* Styles pour le bouton toggle */
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-/* Style de la piste de la barre de défilement pour Chrome */
-.range::-webkit-scrollbar-track {
-    background-color: transparent; /* Couleur de la piste de la barre de défilement */
+.toggle-switch input[type="checkbox"] {
+    accent-color: #1a528f;
 }
 
-
-.range:hover {
-    background-color: #ddd;
-}
-
-#opacity {
-    margin-right: auto;
-    align-self: flex-end;
-}
-/* Cacher le texte par défaut */
+/* Styles pour la sélection de fichier et la couleur */
 #imageInput {
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  /* Style personnalisé pour le bouton de sélection de fichier */
-  .custom-file-input {
+}
+
+.custom-file-input {
     display: inline-block;
     background-color: #1a528f;
     color: #fff;
@@ -89,17 +95,16 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  /* Style pour le texte personnalisé à côté du bouton */
-  .custom-file-label {
-    margin-left: 10px;
-  }
-  
-  /* Style au survol */
-  .custom-file-input:hover {
+}
+
+.custom-file-input:hover {
     background-color: #031121;
-  }
+}
+
+.custom-file-label {
+    margin-left: 10px;
+}
+
 .change-color {
     background-color: #444;
     display: flex;
@@ -109,24 +114,22 @@ main {
     border-radius: 8px;
     padding: 5px;
 }
+
 #ut-color {
-    width: 100px; /* Largeur de l'élément */
-    height: 30px; /* Hauteur de l'élément */
-    background-color: #1a528f; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    border: none; /* Supprimer la bordure par défaut */
-    border-radius: 5px; /* Coins arrondis */
-    cursor: pointer; /* Curseur de type "pointer" pour indiquer qu'il est cliquable */
+    width: 100px;
+    height: 30px;
+    background-color: #1a528f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #ut-color:hover {
-    background-color: #0056b3; /* Couleur de fond au survol */
+    background-color: #0056b3;
 }
 
-
-
-
-
+/* Styles pour la section d'exposition */
 .exposition {
     margin: 145px auto 6px;
     height: 900px;
@@ -141,7 +144,6 @@ main {
 .cube-box {
     height: 100%;
     width: 100%;
-
     display: grid;
     grid-template-columns: repeat(17, 1fr);
     grid-template-rows: repeat(25, 1fr);
@@ -150,4 +152,14 @@ main {
 .on {
     background-color: white;
     opacity: 0.5;
+}
+
+/* Styles pour la barre de défilement personnalisée pour Chrome */
+.range::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+.range::-webkit-scrollbar-track {
+    background-color: transparent;
 }
