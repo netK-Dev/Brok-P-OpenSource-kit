@@ -1,0 +1,538 @@
+<html>
+    
+    
+    <head>
+        <title>BP Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+    
+    </head>
+
+    <body>
+        <header>
+            <h1>Brok P .V1</h1>
+        </header>
+
+        <main>
+
+            <div class="menu">
+                <label for="imageInput" class="custom-file-input">Try</label>
+                <input type="file" accept="image/*" id="imageInput" class="custom-file-label">
+
+                <div class="range">
+                    <div class="range1">
+                        <label>Opacité</label>
+                        <input type="range" min="0" max="100" id="opacity">
+                    </div>
+                    <div class="range2">
+                        <label>epaisseur bordure</label>
+                        <input type="range" min="0" max="100" id="E-bordur">
+                    </div>
+                </div>
+
+                <div class="change-color">
+                    <input type="color" id="ut-color">
+                    <button for="ut-color" type="submit" id="set-color-button">Set Color</button>
+                </div>
+
+                <div class="dim">
+                    <label>Dimension</label>
+                    <div class="dim-tools">
+                        <input id="expo-h" type="number" placeholder="Hauteur (px)">
+                        <input id="expo-w" type="number" placeholder="Largeur (px)">
+                        <button type="button" id="set-dim">Set Dimension</button>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <section class="exposition" id="exposition">
+                <div class="cube-box">
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div> <!--cube 30-->
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div> 
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div> <!--cube 60-->
+        
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div> <!--cube 80-->
+        
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 100-->
+        
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div> <!--cube 130-->
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div> <!--cube 150-->
+                    
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 170-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 190-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div> <!--cube 200-->
+        
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div> <!--cube 220-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 240-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div> <!--cube 260-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 280-->
+        
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div> <!--cube 300-->
+        
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 320-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 340-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    
+        
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 360-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 380-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 400-->
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube off"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+        
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div>
+                    <div class="cube on"></div> <!--cube 425-->
+        
+                </div>
+        
+            </section>
+
+        </main>
+
+        <script src="fonction.js"></script>
+
+    </body>
+</html>
